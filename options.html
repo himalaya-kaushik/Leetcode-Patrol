@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Guard Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Focus Guard Options</h2>
+  <label for="ottPlatforms">OTT Platforms (comma separated URLs):</label>
+  <input type="text" id="ottPlatforms" placeholder="netflix.com, hulu.com, primevideo.com">
+  <button id="saveButton">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>

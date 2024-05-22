@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Guard",
+    "version": "1.0",
+    "description": "Block OTT platforms unless you've visited LeetCode.",
+    "permissions": [
+      "webNavigation",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "*://*.leetcode.com/*",
+      "*://*.netflix.com/*",
+      "*://*.hulu.com/*",
+      "*://*.primevideo.com/*",
+      "*://*.hotstar.com/*",
+      "*://*.jiocinema.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/test.png",
+        "48": "images/test.png",
+        "128": "images/test.png"
+      }
+    },
+    "options_page": "options.html",
+    "web_accessible_resources": [
+      {
+        "resources": ["block.html"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
