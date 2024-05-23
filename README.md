@@ -11,7 +11,7 @@ Leetcode Patrol is a Chrome extension designed to help you stay focused by block
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/productivity-guardian.git
+    git clone https://github.com/your-username/Leetcode-Patrol.git
     ```
 
 2. Open Chrome and navigate to `chrome://extensions/`.
